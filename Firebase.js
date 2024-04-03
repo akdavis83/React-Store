@@ -17,13 +17,13 @@ import { toast } from "react-toastify";
 
  
 const firebaseConfig = {
-  apiKey: "AIzaSyDBueXTtTTLmdtAZTs8SHrr2aDIq6GWm6g",
-  authDomain: "storage4store.firebaseapp.com",
-  databaseURL: "https://storage4store-default-rtdb.firebaseio.com",
-  projectId: "storage4store",
-  storageBucket: "storage4store.appspot.com",
-  messagingSenderId: "926104266401",
-  appId: "1:926104266401:web:33adf843e7e648d652f2e0"// Initialize
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
+  storedatabaseURL: process.env.REACT_APP_storedatabaseURL,
 }; 
 
 
