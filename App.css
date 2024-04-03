@@ -1,0 +1,495 @@
+*{
+    /* background-color: #1053e4; */
+    color: #1053e4;
+  }
+  
+  .home .prophecies,
+  .home .bible {
+    border-radius: 15px;
+    transition: all 0.35s;
+  }
+  
+  .home .bible {
+    grid-column: span 2;
+    height: 450px;
+    overflow-y: auto;
+  }
+  
+  .home .prophecies,
+  .home .stories {
+    height: 300px;
+    overflow-y: auto;
+  }
+  
+  .home .bible,
+  .home .stories,
+  .home .prophecies {
+    border: 1px solid lightgray;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    transition: all 0.35s ease-in-out;
+  }
+  
+  .home .bible:hover,
+  .home .stories:hover,
+  .home .prophecies:hover {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .home .btn-link.prophecy-button:focus {
+    text-decoration: underline;
+  }
+  
+  .home .prophecy-button {
+    padding: 0;
+    background: none;
+    color: inherit;
+    border: none;
+    line-height: 1.5;
+    text-align: inherit;
+    font-size: inherit;
+    overflow: inherit;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  
+  .home .prophecy-button:hover {
+    opacity: 1;
+  }
+  
+  .banner {
+    position: relative;
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .home .selected-prophecy {
+    margin: 2rem 0;
+  }
+  
+  @media (max-width: 991.98px) {
+    .home .bible {
+      grid-column: span 1;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .home .prophecies,
+    .home .stories {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .home {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 3rem;
+    }
+    .home .bible {
+      grid-row: span 2;
+    }
+    .home .prophecies {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .home {
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+  }
+  .row {
+    text-align: center;
+  }
+  .mb-3 {
+    width: 90%;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+
+  }
+  .form-control {
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 0.5%;
+    text-align: center;
+}
+#Total{
+    font-size: xx-large;
+}
+  
+  /* html, body {
+      height: 100%;
+      min-height: 100%;
+  }
+  
+  body {
+      font: 100%/1 'PT Serif', serif;
+      background: #fff;
+      color: #333;
+      border-top: 0.5em solid darkblue;	
+  } */
+  
+  :active, :focus {
+      outline-style: none;
+  }
+  
+  a:link {
+      color: #cc8500;
+      text-decoration: none;
+  }
+  
+  a:hover {
+      color: #cc1400;
+      text-decoration: underline;
+  }
+  
+  /* h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+      font-size: 100%;
+  } */
+  
+  #site {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 1em;
+  }
+  
+  #masthead {
+      margin-top: 3em;
+      padding: 2em 0 0.5em 0;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  #masthead h1 {
+      margin: 0;
+      font-size: 3.5em;
+      overflow: hidden;
+      padding-left: 85px;
+      min-height: 82px;
+      line-height: 2.3;
+      
+      color: #10c8e4;
+      
+  }
+  
+  .tagline {
+      float: right;
+      color: darkblue;
+      font-size: 14px;
+      padding-top: 3.5em;
+  }
+  
+  #products ul {
+      margin: 1.5em 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+  }
+  
+  #products li {
+      float: left;
+      width: 31%;
+      margin: 0 1%;
+      display: block;
+  }
+  
+  .product-image {
+      margin: 0 auto 1em auto;
+      background: #000;
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      
+  }
+  
+  .product-description {
+      font-size: x-small;
+      background: #000;
+      color: #1053e4;
+      border-radius: 5px;
+  }
+  
+  .product-name {
+      text-align: center;
+      color: #fc0;
+      margin: 0;
+      font-size: 1.4em;
+      padding-bottom: 0.2em;
+      border-bottom: 1px dotted #666;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+  }
+  
+  .product-price {
+      width: 4em;
+      height: 4em;
+      font-size: 1.4em;
+      text-align: center;
+      margin: 1em auto;
+      background: #fff;
+      color: darkblue;
+      line-height: 4;
+      border-radius: 50%;
+  }
+  
+  form.add-to-cart div,
+  form.add-to-cart p {
+      text-align: center;
+  }
+  
+  form input.qty {
+      width: 40px;
+      border: 1px solid #040a4e;
+      font: 1em 'PT Serif', serif;
+      background: white;
+      color: #000;
+      border-radius: 3px;
+      margin-left: 0.4em;
+  }
+  
+  .btn, a.btn {
+      display: inline-block;
+      background: #1053e4;
+      color: #fff;
+      font: 1em 'PT Serif', serif;
+      padding: 0.3em 1em;
+      text-align: center;
+      border-radius: 4px;
+      border: 1px solid #10c8e4;
+  }
+  
+  
+  #site-info {
+      height: 3em;
+      width: 100%;
+      line-height: 3;
+      text-align: center;
+      background: #cc8500;
+      position: absolute;
+      color: #fff;
+      left: 0;
+      bottom: 0;
+  }
+  
+  body#checkout-page #site-info {
+      position: static;
+  }
+  
+  #shopping-cart {
+      margin: 1.5em 0;
+  }
+  
+  .shopping-cart {
+      border: 1px solid #ddd;
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      table-layout: fixed;
+  }
+  
+  .shopping-cart th {
+      font-size: 1.3em;
+      padding: 0.3em;
+      width: 33.3%;
+      border: 1px solid #ddd;
+      text-transform: uppercase;
+  }
+  
+  .shopping-cart td {
+      padding: 0.3em;
+      width: 33.3%;
+      border: 1px solid #ddd;
+  }
+  
+  .shopping-cart tr:nth-child(even) {
+      background: #fafafa;
+  }
+  
+  .shopping-cart td.pdelete {
+      text-align: center;
+  }
+  
+  .pdelete a,
+  .pdelete a:hover {
+      color: #c00;
+      text-decoration: none;
+      font-size: 2.5em;
+      display: block;
+      text-align: center;
+  }
+  
+  #shopping-cart-actions {
+      margin: 1.5em 0;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+  }
+  
+  #shopping-cart-actions li {
+      display: inline-block;
+      margin-right: 1em;
+  }
+  
+  #pricing {
+      padding: 0.5em;
+      margin: 1em 0;
+      background: #fafafa;
+  }
+  
+  #sub-total, #shipping {
+      margin: 1.5em 0;
+      text-align: right;
+  }
+  
+  #sub-total span,
+  #shipping span {
+      margin-left: 1em;
+  }
+  
+  #content > h1,
+  #checkout-order-form h2 {
+      font-size: 2em;
+      text-align: center;
+  }
+  
+  #pricing #sub-total,
+  #pricing #shipping {
+      margin: 1em 0;
+  }
+  
+  #checkout-order-form {
+      margin: 1.5em 0;
+  }
+  
+  #checkout-order-form fieldset {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 1em;
+      margin-bottom: 1.3em;
+  }
+  
+  #checkout-order-form legend {
+      padding: 0.3em;
+      background: #fafafa;
+      font-weight: bold;
+  }
+  
+  #checkout-order-form div {
+      margin-bottom: 1em;
+  }
+  
+  #checkout-order-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.3em;
+      text-align: left;
+  }
+  
+  #checkout-order-form input[type="text"] {
+      width: 200px;
+      display: block;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 0.3em;
+  }
+  
+  #checkout-order-form select {
+      width: 200px;
+      display: block;
+  }
+  
+  .message {
+      display: block;
+      margin: 0.5em 0;
+      color: red;
+  }
+  
+  #user-details {
+      margin: 1.5em 0;
+  }
+  
+  #user-details > h2 {
+      text-align: center;
+      font-size: 2em;
+  }
+  
+  #user-details-content {
+      margin: 1.5em 0;
+      padding: 1em;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+  }
+  
+  #user-details-content .detail {
+      float: left;
+      width: 46%;
+  }
+  
+  #user-details-content .detail.right {
+      float: right;
+  }
+  
+  #user-details-content .detail > h2 {
+      text-align: center;
+      font-size: 1.6em;
+      margin-bottom: 0.5em;
+  }
+  
+  #user-details-content ul {
+      margin: 0 0 1em 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  #user-details-content li {
+      display: block;
+      margin-bottom: 0.5em;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  #paypal-form {
+      margin: 1.5em 0;
+  }
+  .shopping-cart {
+      color: #000;
+  }
+  /* CSS for Layout component */
+nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+    }
+    
+    li {
+        margin: 0 10px;
+    }
+    
+    Link {
+        color: white;
+        text-decoration: none;
+    }
+    
+    Link:hover {
+        text-decoration: underline;
+    }
