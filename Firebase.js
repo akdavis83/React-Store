@@ -18,12 +18,12 @@ import { toast } from "react-toastify";
  
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.authDomain,
-  databaseURL: process.env.storedatabaseURL,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
+  storedatabaseURL: process.env.REACT_APP_storedatabaseURL,
 }; 
 
 
